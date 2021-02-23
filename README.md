@@ -2,7 +2,7 @@
 Usamos la metodología Atómic design
 
 # Iniciar proyecto
-- yarn add
+- yarn install
 - yarn dev
 
 Esto descargará las dependencias requeridas y ejecutará el servidor en modo desarrollo
