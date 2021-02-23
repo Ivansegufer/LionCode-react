@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Copperplate';
+    src: url('/fonts/Copperplate.ttf');
+}
+
+:root {
+	--secondary-color: #fff;
+	--primary-color: #231f20;
+	--primary-font: 'Copperplate';
+}
+
+body {
+	color: var(--primary-color);
+	font-family: var(--primary-font), sans-serif;
+	text-align: center;
+}
+
+.menu {
+	width: 100%;
+	height: 4rem;
+	display: flex;
+	margin-bottom: 1rem;
+	justify-content: center;
+	background-color: var(--secondary-color);
+}
+
+.navbar {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	background-color: var(--secondary-color);
+}
+
+.links {
+	display: flex;
+	list-style: none;
+}
+
+.link {
+	margin: 0 0.2rem; 
+
+    a{
+        padding: 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+    }
+}
+
+.link a:hover {
+	color: var(--secondary-color);
+	background-color: var(--primary-color);
+	transition: .7s;
+}
+
+.main {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+}
+
+.logo-img {
+	width: 400px;
+	margin-bottom: 0.8rem;
+}
+
+.welcome {
+    p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
+
+.description {
+    p {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+.copyright {
+	height: 3rem;
+	display: flex;
+	font-size: 1rem;
+	align-items: center;
+	justify-content: center;
+	color: var(--secondary-color);
+	background-color: var(--primary-color);
+}
+
+@media (max-width: 579px) {
+	.menu {
+		display: none;
+	}
+
+	.main {
+		justify-content: center;
+	}
+
+	.logo-img {
+		width: 200px;
+	}
+
+	.description p {
+		font-size: 1rem;
+	}
+}
+.boton {
+	size: 40px;
+	text-align: center;
+	color: #231f20;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .4s;
+	align-items: center;
+	font-size: 40px;
+}
+
+.boton:hover, .boton:focus {
+    background-size: 100% 2px;
+	color: var(--secondary-color);
+	background-color: var(--primary-color);
+}
+
+img {
+	display: block;
+	margin: auto;
+}
